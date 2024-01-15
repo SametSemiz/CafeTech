@@ -1,0 +1,134 @@
+#item4 {
+    font-weight: bolder;
+    font-size: 24px;
+    color: rgb(87, 61, 0);
+   }
+
+  /* Kaydırma çubuğunu özelleştir */
+  ::-webkit-scrollbar {
+    width: 12px;
+  }
+
+  /* Kaydırma çubuğu arka planı */
+  ::-webkit-scrollbar-track {
+    background-color: transparent;
+  }
+
+  /* Kaydırma çubuğu dolgu rengi */
+  ::-webkit-scrollbar-thumb {
+    background-color: #888;
+    border-radius: 6px;
+  }
+
+  /* Kaydırma çubuğu üzerine gelindiğinde dolgu rengi */
+  ::-webkit-scrollbar-thumb:hover {
+    background-color: #555;
+  }
+
+  
+
+
+
+  * {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+.container {
+    max-width: 960px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+
+.about-section {
+    background-color: #fff;
+    padding: 40px;
+    margin-bottom: 30px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    border-radius: 25px;
+    -webkit-border-radius: 25px;
+    -moz-border-radius: 25px;
+    -ms-border-radius: 25px;
+    -o-border-radius: 25px;
+}
+
+.about-section h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.about-section p {
+    margin-bottom: 15px;
+}
+
+.about-section address {
+    margin-bottom: 15px;
+}
+
+.about-section ul {
+    list-style: none;
+}
+
+.image-section {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.image-section img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+
+.left {
+  float: left;
+  padding-right: 15px;
+  width: 70%;
+}
+
+.right{
+  float: left;
+  width: 30%;
+}
+
+.phone_email {
+  background: rgb(219, 219, 219);
+  width: 300px;
+  float: left;
+  padding: 10px;
+  margin: 20px 0 16px 20px;
+  text-align: center;
+  border-radius: 20px;;
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  -ms-border-radius: 20px;
+  -o-border-radius: 20px;
+}
+
+.address {
+  width: 200px;
+  background: #6a6a6a;
+  text-align: center;
+  padding: 10px 0 0 5px;
+  color: #fff;
+  float: left;
+  margin: 26px 0 0 30px;
+  border-radius: 20px;;
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  -ms-border-radius: 20px;
+  -o-border-radius: 20px;
+}

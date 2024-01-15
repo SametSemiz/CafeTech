@@ -1,0 +1,533 @@
+ #item1 {
+  font-weight: bolder;
+  font-size: 24px;
+  color: rgb(87, 61, 0);
+ }
+
+ 
+
+ /* Kaydırma çubuğunu özelleştir */
+ ::-webkit-scrollbar {
+   width: 12px;
+ }
+
+ /* Kaydırma çubuğu arka planı */
+ ::-webkit-scrollbar-track {
+   background-color: transparent;
+ }
+
+ /* Kaydırma çubuğu dolgu rengi */
+ ::-webkit-scrollbar-thumb {
+   background-color: #888;
+   border-radius: 6px;
+ }
+
+ /* Kaydırma çubuğu üzerine gelindiğinde dolgu rengi */
+ ::-webkit-scrollbar-thumb:hover {
+   background-color: #555;
+ }
+
+
+
+.all {
+margin: auto;
+}
+
+
+.box1 {
+    background-image: url('../images/Backgrounds/bg12.jpg');
+    background-size: 100%;
+	height: 100vh;
+    padding-top: 20px;
+    padding-left: 60px;
+}
+
+.box2 {
+    background-image: url('../images/bg2.jpg');
+    background-size: cover;
+	height: 125vh;
+    width: 100%;
+}
+
+.box3 {
+    width: 100%;
+    margin: -200px auto 0 auto;
+}
+
+.box4 {
+	  height: 80vh;
+    width: 100%;
+    background: #fff;    
+}
+
+.box5 {
+    background-image: url('../images/bg5.jpg');
+    background-size: cover;
+	height: 125vh;
+    width: 100%;
+    padding: 50px 0 0 0;
+}
+
+.box6 {
+  background: #f2f2f2;
+	height: 100vh;
+    width: 100%;
+  padding: 6% 0 0 0;
+}
+
+.box7 {
+    background-image: url('../images/bg7.jpg');
+    background-size: cover;
+	height: 125vh;
+    width: 100%;
+}
+
+.box8 {
+    background-image: url('../images/bg8.jpg');
+    background-size: cover;
+	height: 125vh;
+    width: 100%;
+}
+
+.box {
+    background: #fff;
+    padding: 60px;
+    box-shadow: 0px 20px 20px rgba(0, 0, 0, 0.1);
+    box-decoration-break: clone;
+  }
+
+.footer {
+  height: 60vh;
+  background: #3e3e3e;
+}
+
+  .card1 {
+    width: 350px;
+    float: left;
+    margin: 50px 0 0 170px;
+    border-radius: 20px;
+  }
+
+  
+  .card2 {
+    width: 170px;
+    height: 230px;
+    margin: -70px auto 0 auto;
+    border-radius: 20px;
+    background: #eb9e3382;
+  }
+
+  /*-----------------------------------------*/
+
+  
+/* Sekme düğmeleri */
+
+.tab {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    background-color: transparent;
+    border-radius: 20px;
+    overflow: hidden;
+    margin: 50px 0 0 0;
+  }  
+  
+  .tab button {
+    background-color: white;
+    border: none;
+    color: #000;
+    padding: 12px 24px;
+    font-size: 18px;
+    cursor: pointer;
+    transition: 0.3s;
+    border-radius: 20px 20px 0 0;
+  }
+  
+  
+  .tab button:hover {
+    background-color: #f2f2f2;
+  }
+  
+  .tab button.active {
+    background-color: #ffffff;
+    color: rgb(0, 0, 0);
+    border: 1px solid rgb(35, 35, 35);
+  }
+
+
+
+  /* Kahve sekmesi */
+.tab-coffee {
+    width: 200px;
+    padding: 20px;
+    text-align: center;
+    cursor: pointer;
+    background-color: #f9e0c9;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    border: solid 5px #d2b25f;
+  }
+  
+  /* Tatlı sekmesi */
+  .tab-dessert {
+    width: 200px;
+    padding: 20px;
+    text-align: center;
+    cursor: pointer;
+    background-color: #f9e0c9;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    border: solid 5px #d2b25f;
+  }
+
+  /* Kahve sekmesi */
+.tab-coffee:focus, .tab-coffee:active {
+    outline: none;
+  }
+  
+  /* Tatlı sekmesi */
+  .tab-dessert:focus, .tab-dessert:active {
+    outline: none;
+  }
+  
+  
+  
+  /* Sekme içerikleri */
+  .tabcontent {
+    width: 60%;
+    height: 420px;
+    margin: 20px auto 50px auto;
+    display: none;
+    padding: 20px;
+    background-color: white;
+    border-radius: 20px;
+  }
+  
+  .tabcontent h3 {
+    font-size: 28px;
+    color: #d2b25f;
+  }
+  
+  .tabcontent p {
+    font-size: 20px;
+    color: #666;
+  }
+  
+  /* Grid layout */
+  .tabcontent-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-gap: 20px;
+    justify-items: center;
+    margin-top: 20px;
+  }
+
+  /*-------------------------*/
+
+  .card {
+    overflow: visible;
+    width: 30%;
+    height: 254px;
+    margin: 0 0 0 3%;
+    float: left;
+  }
+  
+  .content {
+    width: 100%;
+    height: 100%;
+    transform-style: preserve-3d;
+    transition: transform 300ms;
+    box-shadow: 0px 0px 20px 1px #000000ee;
+    border-radius: 5px;
+  }
+  
+  .front, .back {
+    background-color: #151515;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    -webkit-backface-visibility: hidden;
+    border-radius: 5px;
+    overflow: hidden;
+  }
+  
+  .back {
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+  }
+  
+  .back::before {
+    position: absolute;
+    content: ' ';
+    display: block;
+    width: 160px;
+    height: 160%;
+    background: linear-gradient(90deg, transparent, #ff9966, #ff9966, #ff9966, #ff9966, transparent);
+    animation: rotation_481 5000ms infinite linear;
+  }
+  
+  .back-content {
+    position: absolute;
+    width: 99%;
+    height: 99%;
+    background-color: #151515;
+    border-radius: 5px;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+  }
+  
+  .card:hover .content {
+    transform: rotateY(180deg);
+  }
+  
+  @keyframes rotation_481 {
+    0% {
+      transform: rotateZ(0deg);
+    }
+  
+    0% {
+      transform: rotateZ(360deg);
+    }
+  }
+  
+  .front {
+    transform: rotateY(180deg);
+    color: white;
+  }
+  
+  .front .front-content {
+    position: absolute;
+    width: 85%;
+    height: 85%;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  
+  .front-content .badge {
+    background-color: #00000055;
+    padding: 2px 20px;
+    border-radius: 20px;
+    backdrop-filter: blur(2px);
+    width: fit-content;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    -ms-border-radius: 20px;
+    -o-border-radius: 20px;
+}
+  
+  .description {
+    box-shadow: 0px 0px 20px 5px #ffffff33;
+  
+    padding: 20px;
+    background-color: #868686;
+    backdrop-filter: blur(5px);
+    border-radius: 5px;
+  }
+  
+  .title {
+    font-size: 11px;
+    max-width: 100%;
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .title p {
+    width: 50%;
+  }
+  
+  .card-footer {
+    color: #ffffff;
+    margin-top: 5px;
+    font-size: 8px;
+  }
+  
+  .front .img {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+  }
+  
+  .circle {
+    width: 90px;
+    height: 90px;
+    border-radius: 50%;
+    background-color: #ffbb66;
+    position: relative;
+    filter: blur(20px);
+    animation: floating 2600ms infinite linear;
+    -webkit-filter: blur(20px);
+    -webkit-animation: floating 2600ms infinite linear;
+}
+  
+  #bottom {
+    background-color: #ff8866;
+    left: 50px;
+    top: 0px;
+    width: 150px;
+    height: 150px;
+    animation-delay: -800ms;
+  }
+  
+  #right {
+    background-color: #ff2233;
+    left: 160px;
+    top: -80px;
+    width: 30px;
+    height: 30px;
+    animation-delay: -1800ms;
+  }
+  
+  @keyframes floating {
+    0% {
+      transform: translateY(0px);
+    }
+  
+    50% {
+      transform: translateY(20px);
+    }
+  
+    100% {
+      transform: translateY(0px);
+    }
+  }
+
+  .tablinks.active {
+    border: 2px solid black;
+    border-radius: 5px;
+    }
+
+.box2button {
+      margin: 40px 0 0 32%;
+      appearance: none;
+      background-color: transparent;
+      border: 0.125em solid #1A1A1A;
+      border-radius: 0.9375em;
+      box-sizing: border-box;
+      color: #3B3B3B;
+      cursor: pointer;
+      display: inline-block;
+      font-family: Roobert,-apple-system,BlinkMacSystemFont,"Segoe UI",Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
+      font-size: 16px;
+      font-weight: 600;
+      line-height: normal;
+      min-height: 3.75em;
+      min-width: 0;
+      outline: none;
+      padding: 1em 2.3em;
+      text-align: center;
+      text-decoration: none;
+      transition: all 300ms cubic-bezier(.23, 1, 0.32, 1);
+      user-select: none;
+      -webkit-user-select: none;
+      touch-action: manipulation;
+      will-change: transform;
+      width: 250px;
+     }
+     
+     button:disabled {
+      pointer-events: none;
+     }
+     
+     button:hover {
+      color: #fff;
+      background-color: #1A1A1A;
+      box-shadow: rgba(0, 0, 0, 0.25) 0 8px 15px;
+      transform: translateY(-2px);
+     }
+     
+     button:active {
+      box-shadow: none;
+      transform: translateY(0);
+     }
+
+     .card-comment1 {
+      width: 65%;
+      height: 30%;
+      background: #26262612;
+      float: left;
+      margin: -510px 0 0 8%;
+      z-index: 3;
+      position: absolute;
+      border-radius: 20px;
+      -webkit-border-radius: 20px;
+      -moz-border-radius: 20px;
+      -ms-border-radius: 20px;
+      -o-border-radius: 20px;
+}
+    
+    .smallIcon1 {
+      width: 100%;
+      height: 100%;
+      background-color: #434343c2;
+      float: left;
+      border-radius: 20px;
+      -webkit-border-radius: 20px;
+      -moz-border-radius: 20px;
+      -ms-border-radius: 20px;
+      -o-border-radius: 20px
+    }
+    
+    .smallIcon1 div {
+      margin-top: 20px;
+      background-size: 200% 100%;
+      background-position: 100% 0;
+      float: left;
+      animation: load89234 2s infinite;
+      color: #26262612;
+      font-weight: bold;
+      font-size: 15px;
+    }
+    
+    .Icon1 {
+      margin: 8px 5px 0 20px;
+      width: 20%;
+      height: 80%;
+      float: left;
+      border-radius: 100px;
+      -webkit-border-radius: 100px;
+      -moz-border-radius: 100px;
+      -ms-border-radius: 100px;
+      -o-border-radius: 100px;
+}
+    
+    
+    .Description1 {
+      margin: 20px;
+      width: 65%;
+      height: 52%;
+      color: rgb(235, 235, 235);
+      float: left;
+      transform: translate(0px ,-5px);
+      border-radius: 5px;
+      -webkit-transform: translate(0px ,-5px);
+      -moz-transform: translate(0px ,-5px);
+      -ms-transform: translate(0px ,-5px);
+      -o-transform: translate(0px ,-5px);
+}
+    
+    @keyframes load89234 {
+      100% {
+        background-position: -100% 0;
+      }
+    }
+
+    
+
+    .amazingslider{
+      opacity: 0.6;
+    }
+
+    

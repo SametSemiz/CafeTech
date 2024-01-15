@@ -1,0 +1,186 @@
+.book1 {
+    position: relative;
+    border-radius: 10px;
+    width: 320px;
+    height: 400px;
+    background-color: rgb(255, 231, 174);
+    -webkit-box-shadow: 1px 1px 12px #000;
+    box-shadow: 1px 1px 12px #000;
+    -webkit-transform: preserve-3d;
+    -ms-transform: preserve-3d;
+    transform: preserve-3d;
+    -webkit-perspective: 2000px;
+    perspective: 2000px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    color: #000;
+    float: left;
+    margin: 0 0 0 7%;
+  }
+  
+  .cover1 {
+    top: 0;
+    position: absolute;
+    background-color: rgb(239, 196, 103);
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    cursor: pointer;
+    -webkit-transition: all 0.5s;
+    transition: all 0.5s;
+    -webkit-transform-origin: 0;
+    -ms-transform-origin: 0;
+    transform-origin: 0;
+    -webkit-box-shadow: 1px 1px 12px #000;
+    box-shadow: 1px 1px 12px #000;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+  }
+  
+  .book1:hover .cover1 {
+    -webkit-transition: all 0.5s;
+    transition: all 0.5s;
+    -webkit-transform: rotatey(-80deg);
+    -ms-transform: rotatey(-80deg);
+    transform: rotatey(-80deg);
+  }
+  
+  .box5-content {
+    margin: 60px 0 0 0;
+  }
+
+  /********************************/
+
+  .flip-card2 {
+    background-color: transparent;
+    width: 245px;
+    height: 270px;
+    position: relative;
+    float: left;
+    perspective: 1000px;
+    margin: 0 0 0 4% ;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  }
+  
+  .flip-card-inner2 {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.6s;
+    transform-style: preserve-3d;
+  }
+  
+  .flip-card-front2, .flip-card-back2 {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    padding: 5px;
+    border-radius: 2em;
+    backface-visibility: hidden;
+  }
+  
+  .flip-card-front2 {
+    background-color: #240d29;
+    border: 4px solid #c143da;
+  }
+  
+  .profile-image2 {
+    background-color: transparent;
+    border: none;
+    margin-top: 15px;
+    border-radius: 5em;
+    width: 120px;
+    height: 120px;
+    margin-left: 50px;
+  }
+  
+  .pfp2 {
+    border-radius: 35em;
+    fill: #c143da;
+  }
+  
+  .name2 {
+    margin-top: 15px;
+    font-size: 27px;
+    color: #c143da;
+    font-weight: bold;
+  }
+  
+  .flip-card-back2 {
+    background-color: #240d29;
+    border: 4px solid #c143da;
+    transform: rotateY(180deg);
+    padding: 11px;
+  }
+  
+  .description2 {
+    margin-top: 5px;
+    font-size: 14px;
+    letter-spacing: 1px;
+    color: rgb(228, 228, 228);
+  }
+  
+  .flip-card2:hover .flip-card-inner2 {
+    transform: rotateY(180deg);
+  }
+
+  .employee {
+    padding: 5px;
+    color: rgb(242, 242, 242);
+  }
+  
+  .employee-title {
+    font-size: 17px;
+    font-weight: bold;
+  }
+  
+  .employee-name {
+    font-size: 15px;
+    margin-top: 5px;
+  }
+  
+  .employee-comment {
+    font-size: 13px;
+    margin: 5px 0 10px 0;
+    font-style: italic;
+    color: rgba(210, 210, 210, 0.933);
+  }
+  
+  .box6-content {
+    margin: 6% 0 0 3%;
+  }
+
+  .box6-title {
+    width: 400px;
+    height: 70px;
+    margin: auto;
+    border-radius: 30px;
+    background: #c0a4f1;
+    box-shadow: 10px 10px 20px #e3abffcb,
+               -10px -10px 20px #e3abffcb;
+  }
+  
+  .box6-title h2 {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 38px;
+    font-weight: bold;
+    color: #2b0099;
+    margin: 0;
+    text-align: center;
+    padding: 10px 0 0 0;
+  }
